@@ -21,8 +21,8 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información de Carreras</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Carreras</title>
+    <link rel="stylesheet" href="./styles/carreras.css">
 </head>
 <body>
     <header>
@@ -41,7 +41,7 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             echo "<ul>";
             while($row = $result->fetch_assoc()) {
-                echo "<li><strong>" . $row["nombre"] . "</strong>: " . $row["descripcion"] . "</li>";
+                echo "<li><strong>" . $row["nombre"] . "</strong> " . $row["descripcion"] . "</li>";
             }
             echo "</ul>";
         } else {
