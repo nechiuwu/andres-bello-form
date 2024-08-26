@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav>
             <ul>
                 <li><a href="index.php">Registro Estudiantil</a></li>
-                <li><a href="carreras.html">Información de Carreras</a></li>
+                <li><a href="carreras.php">Información de Carreras</a></li>
             </ul>
         </nav>
     </header>
