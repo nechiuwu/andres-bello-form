@@ -18,12 +18,14 @@ $result = $conn->query($sql);
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreras</title>
     <link rel="stylesheet" href="./styles/carreras.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -33,14 +35,14 @@ $result = $conn->query($sql);
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
         <h1>Información de Carreras</h1>
-        
+
         <?php
         if ($result->num_rows > 0) {
             echo "<ul>";
-            while($row = $result->fetch_assoc()) {
+            while ($row = $result->fetch_assoc()) {
                 echo "<li><strong>" . $row["nombre"] . "</strong> " . $row["descripcion"] . "</li>";
             }
             echo "</ul>";
@@ -51,4 +53,5 @@ $result = $conn->query($sql);
         ?>
     </div>
 </body>
+
 </html>
