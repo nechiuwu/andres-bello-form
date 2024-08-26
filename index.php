@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z\s]{2,50}" title="Apellido debe contener entre 2 y 50 caracteres, solo letras y espacios">
 
             <label for="rut">RUT:</label>
-            <input type="text" id="rut" name="rut" required pattern="\d{1,2}\.\d{3}\.\d{3}-[\dkK]{1}" title="Formato RUT válido: 12.345.678-9">>
+            <input type="text" id="rut" name="rut" required pattern="\d{1,2}\.\d{3}\.\d{3}-[\dkK]{1}" title="Formato RUT válido: 12.345.678-9">
 
             <label for="direccion">Dirección:</label>
             <input type="text" id="direccion" name="direccion" required pattern=".{5,100}" title="Dirección debe tener entre 5 y 100 caracteres">
